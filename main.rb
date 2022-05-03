@@ -12,16 +12,17 @@ Data clumps - Extract class, Introduce whole object
 
 class Label 
 
-  attr_accessor :text 
+  attr_accessor :text, :x 
 
-  def initialize(text)
+  def initialize(text, x)
     @text = text
+    @x = x
   end
 end
 
 
 def draw_button(label_text, x, y, foreground_color, is_dark_mode)
-  label = Label.new(text)
+  label = Label.new(text, x)
   if is_dark_mode
     # darken foreground color for dark mode
     paint(label_text, x, y, foreground_color - 10, '#111111')
