@@ -4,7 +4,7 @@ Smells:
 
 Comments - Extract function
 
-Primitive obsession - Replace primitive with object
+Primitive obsession - Replace primitive with object, Replace type code with subclasses
 
 Data clumps - Extract class, Introduce parameter object
 
@@ -22,6 +22,9 @@ class Label
   end
 end
 
+def button_foreground_color_offset()
+  
+end
 
 def draw_button(is_dark_mode, label)
   if is_dark_mode
