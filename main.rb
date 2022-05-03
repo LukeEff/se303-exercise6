@@ -22,8 +22,11 @@ class Label
   end
 end
 
-def button_foreground_color_offset()
-  
+def button_foreground_color_offset(is_dark_mode)
+  if is_dark_mode
+    -10
+  else
+    10
 end
 
 def draw_button(is_dark_mode, label)
