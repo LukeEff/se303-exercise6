@@ -39,11 +39,5 @@ def button_color(is_dark_mode)
 end
 
 def draw_button(is_dark_mode, label)
-  if is_dark_mode
-    # darken foreground color for dark mode
-    paint(label.text, label.x, label.y, label.foreground_color + button_foreground_color_offset(is_dark_mode), button_color(is_dark_mode))
-  else
-    # lighten foreground color for non-dark mode
-    paint(label.text, label.x, label.y, label.foreground_color + button_foreground_color_offset(is_dark_mode), button_color(is_dark_mode))
-  end
+  paint(label.text, label.x, label.y, label.foreground_color + button_foreground_color_offset(is_dark_mode), button_color(is_dark_mode))
 end
