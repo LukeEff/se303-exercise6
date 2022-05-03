@@ -23,8 +23,7 @@ class Label
 end
 
 
-def draw_button(label_text, x, y, foreground_color, is_dark_mode, label)
-  label = Label.new(text, x, y, foreground_color)
+def draw_button(is_dark_mode, label)
   if is_dark_mode
     # darken foreground color for dark mode
     paint(label.text, label.x, label.y, label.foreground_color - 10, '#111111')
