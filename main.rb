@@ -6,7 +6,7 @@ Comments - Extract function
 
 Primitive obsession - Replace primitive with object
 
-Data clumps - Extract class, Introduce whole object
+Data clumps - Extract class, Introduce parameter object
 
 """
 
@@ -23,7 +23,7 @@ class Label
 end
 
 
-def draw_button(label_text, x, y, foreground_color, is_dark_mode)
+def draw_button(label_text, x, y, foreground_color, is_dark_mode, label)
   label = Label.new(text, x, y, foreground_color)
   if is_dark_mode
     # darken foreground color for dark mode
