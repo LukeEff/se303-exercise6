@@ -27,11 +27,19 @@ class LightModeCanvas < Canvas
   def button_foreground_color_offset
     10
   end
+
+  def button_color
+    '#E0E0E0'
+  end
 end
 
 class DarkModeCanvas < Canvas
   def button_foreground_color_offset
     -10
+  end
+
+  def button_color
+    '#111111'
   end
 end
 
