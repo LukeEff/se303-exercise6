@@ -2,9 +2,17 @@
 
 Smells:
 
+Comments - Extract function
 
+Primitive obsession - Replace primitive with object
+
+Data clumps - Extract class, Introduce whole object
 
 """
+
+class Label 
+end
+
 
 def draw_button(label_text, x, y, foreground_color, is_dark_mode)
   if is_dark_mode
