@@ -22,6 +22,14 @@ class Label
   end
 end
 
+class LightModeCanvas < Canvas
+
+end
+
+class DarkModeCanvas < Canvas
+
+end
+
 def button_foreground_color_offset(is_dark_mode)
   if is_dark_mode
     -10
