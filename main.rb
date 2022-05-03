@@ -24,10 +24,15 @@ end
 
 class LightModeCanvas < Canvas
 
+  def button_foreground_color_offset
+    10
+  end
 end
 
 class DarkModeCanvas < Canvas
-
+  def button_foreground_color_offset
+    -10
+  end
 end
 
 def button_foreground_color_offset(is_dark_mode)
