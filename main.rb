@@ -30,7 +30,9 @@ def button_foreground_color_offset(is_dark_mode)
   end
 end
 
-
+def button_color
+  '#111111'
+end
 
 def draw_button(is_dark_mode, label)
   if is_dark_mode
