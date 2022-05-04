@@ -43,6 +43,14 @@ class DarkModeCanvas < Canvas
   end
 end
 
+def self.create_canvas(is_dark_mode) 
+  if is_dark_mode
+    DarkModeCanvas.new
+  else
+    LightModeCanvas.new 
+  end
+end
+
 def button_foreground_color_offset(is_dark_mode)
   if is_dark_mode
     -10
