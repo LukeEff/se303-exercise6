@@ -59,14 +59,8 @@ def button_foreground_color_offset(is_dark_mode)
   end
 end
 
-def button_color(is_dark_mode)
-  if is_dark_mode 
-    '#111111'
-  else
-    '#E0E0E0'
-  end
-end
+def button_color; raise "Subclass Responsibility"; end
 
 def draw_button(is_dark_mode, label)
-  paint(label.text, label.x, label.y, label.foreground_color + button_foreground_color_offset(is_dark_mode), button_color(is_dark_mode))
+  paint(label.text, label.x, label.y, label.foreground_color + button_foreground_color_offset(is_dark_mode), button_color)
 end
