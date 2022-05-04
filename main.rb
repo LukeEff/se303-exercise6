@@ -51,13 +51,7 @@ def self.create_canvas(is_dark_mode)
   end
 end
 
-def button_foreground_color_offset(is_dark_mode)
-  if is_dark_mode
-    -10
-  else
-    10
-  end
-end
+def button_foreground_color_offset; raise "Subclass Responsibility"; end
 
 def button_color; raise "Subclass Responsibility"; end
 
