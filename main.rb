@@ -28,21 +28,22 @@ end
 
 class LightModeButton < Button
 
-  def button_foreground_color_offset
+  def foreground_color_offset
     10
   end
 
-  def button_color
+  def color
     '#E0E0E0'
   end
 end
 
 class DarkModeButton < Button
-  def button_foreground_color_offset
+
+  def foreground_color_offset
     -10
   end
 
-  def button_color
+  def color
     '#111111'
   end
 end
