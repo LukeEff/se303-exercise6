@@ -56,5 +56,5 @@ def button_foreground_color_offset; raise "Subclass Responsibility"; end
 def button_color; raise "Subclass Responsibility"; end
 
 def draw_button(is_dark_mode, label)
-  paint(label.text, label.x, label.y, label.foreground_color + button_foreground_color_offset(is_dark_mode), button_color)
+  paint(label.text, label.x, label.y, label.foreground_color + button_foreground_color_offset, button_color)
 end
