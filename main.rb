@@ -56,10 +56,6 @@ def self.create_canvas(is_dark_mode)
   end
 end
 
-def button_foreground_color_offset; raise "Subclass Responsibility"; end
-
-def button_color; raise "Subclass Responsibility"; end
-
 def draw_button(label, button)
-  paint(label.text, label.x, label.y, label.foreground_color + button_foreground_color_offset, button_color)
+  paint(label.text, label.x, label.y, label.foreground_color + button.foreground_color_offset, button.color)
 end
