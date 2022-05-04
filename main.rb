@@ -48,14 +48,6 @@ class DarkModeButton < Button
   end
 end
 
-def self.create_canvas(is_dark_mode) 
-  if is_dark_mode
-    DarkModeCanvas.new
-  else
-    LightModeCanvas.new 
-  end
-end
-
 def draw_button(label, button)
   paint(label.text, label.x, label.y, label.foreground_color + button.foreground_color_offset, button.color)
 end
