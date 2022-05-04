@@ -22,7 +22,11 @@ class Label
   end
 end
 
-class LightModeCanvas < Canvas
+class Button
+
+end
+
+class LightModeButton < Button
 
   def button_foreground_color_offset
     10
@@ -33,7 +37,7 @@ class LightModeCanvas < Canvas
   end
 end
 
-class DarkModeCanvas < Canvas
+class DarkModeButton < Button
   def button_foreground_color_offset
     -10
   end
